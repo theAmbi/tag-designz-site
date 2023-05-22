@@ -42,7 +42,7 @@ const Navbar = () => {
                             <Link href={''} className=" relative py-6 pl-10 border-b-2 border-textGray/20 md:pl-20" onClick={() => setServices(!services)}>
                                 <div className=" flex gap-x-3">
                                     <p className=" text-textGray font-semibold py-5">What We Offer</p>
-                                    <Image src={dropArrow} alt="dropdown-arrow" />
+                                    <Image src={dropArrow} alt="dropdown-arrow" fetchPriority="high" />
                                 </div>
                                 {services && <article className="flex flex-col pt-4 pl-8 text-textGray">
                                     <Link className=" py-5 capitalize border-b-2 border-b-textGray/20 " href={'/services/web-development'}>Web Development</Link>
