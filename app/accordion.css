@@ -1,0 +1,50 @@
+
+.accordion-enter{
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.accordion-enter-active{
+    opacity: 1;
+    transition: transform 500ms;
+    transform: translateY(0);
+}
+
+.accordion-enter-done{
+    opacity: 1;
+}
+
+.service-tab-enter{
+    opacity: 0;
+    transform: translateY(-50%);
+}
+
+.service-tab-enter-active{
+    opacity: 1;
+    transition: 700ms;
+    transform: translateY(0);
+    background-color: red;
+
+}
+
+.service-tab-enter-done{
+    opacity: 1;
+}
+
+.service-tab-exit{
+    opacity: 1;
+    transition: 700ms ;
+    transform: translateY(-50%);
+    /* background-color: yellow; */
+}
+
+.service-tab-exit-active{
+    opacity: 0.5;
+    transition: 700ms all;
+    /* transform: translateY(100%); */
+    /* background-color: yellowgreen; */
+}
+
+.service-tab-exit-done{
+    opacity: 0;
+}

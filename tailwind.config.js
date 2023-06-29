@@ -7,18 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       container: {
         screens: {
-          mobile: '350px',
-          tablet: '900px',
-          desktop: '1200px'
+          sm: '350px',
+          md: '650px',
+          lg: '980px',
+          xl: '1200px',
+
         },
         center: true,
       },
 
       colors: {
         'mainBG': '#FFFFFF',
-        'darkBlue': '#151421',
+        'darkBlue': "#151421",
         'textOrange': '#F06435',
         'textGray': '#606671',
         'subTitle': '#000000',
@@ -27,12 +37,35 @@ module.exports = {
         'headingDark': '#151421',
         'grayBG': '#F9F9F9',
         'heroBG': '#E4592B',
+        'textPlaceholder': '#A4ADBB',
+        'footerRights': '#211E2F',
+        'fadedBlue': "#A1D7F8",
+        'gradientBlue': "#313852",
+        'tabBlue': "#f4fcff",
+
       },
 
       fontFamily: {
-        // 'clashDisplay': ['Clash_Display_Regular', 'sans-serif'],
         'clashDisplay': ['Clash Display', 'sans-serif'],
-        // 'clashDisplaySEMIBOLD': ['Display_Semibold', 'sans-serif'],
+      },
+
+      backgroundImage: {
+        'office': "url('/office.jpg')",
+        'design': "url('/design.jpg')",
+        'development': "url('/development.jpg')",
+        'pattern': "url('/pattern.png')",
+        'designFeatured': "url('/design_featured.jpg')",
+        'logoDesign': "url('/logo-design.jpg')",
+        'uiDesign': "url('/ui-design.jpg')",
+        'imageEdit': "url('/image-edit.jpg')",
+        'illustration': "url('/illustration.jpg')",
+      },
+
+      backgroundSize: {
+        'auto': 'auto',
+        'contain': 'contain',
+        'cover': 'cover',
+        '120%': '120%',
       }
 
     },

@@ -5,29 +5,42 @@
 @tailwind utilities;
 
 
-/* @font-face {
-  font-family: 'Clash-Display_Light';
-  src: url(./fonts/ClashDisplay-Light.woff);
+
+html{
+  scroll-behavior: smooth;
+}
+
+.service-dropdown-enter{
+  transform: translateX(100%);
+  opacity: 0;
+  /* background-color: purple; */
+}
+
+.service-dropdown-enter-active{
+  transform: translateX(0);
+  transition: transform 1000ms;
+  opacity: 1;
+}
+
+.service-dropdown-enter-done{
+  opacity: 1;
+}
+
+.service-dropdown-exit{
+  transform: translateX(0);
+  /* transition: transform 1000ms; */
+  /* background-color: yellow; */
+  opacity: 1;
+}
+
+.service-dropdown-exit-active{
+  transform: translateX(100%);
+  transition: transform 1000ms;
+  opacity: 0;
+}
+
+/* .service-dropdown-exit-done{
+  opacity: 0;
 } */
 
-
-
-/* @font-face {
-  font-family: 'Display_Semibold';
-  src: url('./fonts/ClashDisplay-Semibold.woff');
-  font-weight: bold;
-} */
-
-/* @font-face {
-  font-family: 'xtraBOLD';
-  src: url(./fonts/ClashDisplay-Semibold.woff) format('woff');
-} */
-/* @font-face {
-  font-family: 'Clash-Display_Medium';
-  src: url(./fonts/ClashDisplay-Medium.woff);
-} */
-/* @font-face {
-  font-family: 'Clash-Display_Semibold';
-  src: url(./fonts/ClashDisplay-Semibold.woff);
-} */
-
+/* .service-dropdown-exit-done{} */
