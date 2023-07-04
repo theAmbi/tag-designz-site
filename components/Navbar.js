@@ -55,9 +55,9 @@ const Navbar = () => {
                             <Link href={''} className=" flex flex-col gap-x-3 " ref={desktopServiceRef}>
                                 <div className="inline-flex gap-4" onClick={() => setDesktopServices(!desktopServices)}>
                                     What We Offer
-                                    <Image src={dropArrow} alt="dropdown-arrow" width={13} height={64} className={`w-auto ${desktopServices ? 'rotate-180' : 'rotate-0'} transition duration-300 ease-linear `} />
+                                    <Image src={dropArrow} alt="dropdown-arrow" width={24} height={24} className={`w-auto ${desktopServices ? 'rotate-180' : 'rotate-0'} transition duration-300 ease-linear `} />
                                 </div>
-                                {desktopServices && <div className="bg-mainBG absolute top-[60px] left-0 w-[75%] flex flex-col rounded-b-lg shadow-2xl shadow-slate-300/20 divide-y" >
+                                {desktopServices && <div className="bg-mainBG absolute top-[55px] left-0 w-[75%] flex flex-col rounded-b-lg shadow-2xl shadow-slate-300/20 divide-y" >
                                     <Link className=" py-6 px-6 hover:bg-textOrange hover:text-mainBG" href={'/services/web-development'}>Web Development</Link>
                                     <Link className=" py-6 px-6 hover:bg-textOrange hover:text-mainBG" href={'/services/graphic-design'}>Graphic Design</Link>
                                     <Link href={'/services/brand-identity'} className=" py-6 px-6 hover:bg-textOrange hover:text-mainBG ">Brand Identity</Link>
@@ -80,7 +80,7 @@ const Navbar = () => {
                                     <Link href={''} className=" relative py-6 pl-10 border-b border-textGray/10 md:pl-20" onClick={() => setServices(!services)}>
                                         <div className=" flex gap-x-3">
                                             <p className=" text-textGray py-5 hover:text-heroBG" onClick={() => setServices(!services)}>What We Offer</p>
-                                            <Image src={dropArrow} width={13} height={7} alt="dropdown-arrow" fetchPriority="high" className={`${services ? 'rotate-180 transition duration-300 ease-out text-heroBG' : 'rotate-0 transition duration-300 ease-out'}`} />
+                                            <Image src={dropArrow} width={24} height={24} alt="dropdown-arrow" fetchPriority="high" className={`${services ? 'rotate-180 transition duration-300 ease-out text-heroBG' : 'rotate-0 transition duration-300 ease-out'}`} />
                                         </div>
                                         <CSSTransition in={services} timeout={1000} classNames={'service-dropdown'}>
                                             <div>

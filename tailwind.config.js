@@ -17,7 +17,7 @@ module.exports = {
       },
       container: {
         screens: {
-          sm: '350px',
+          sm: '320px',
           md: '650px',
           lg: '980px',
           xl: '1200px',
@@ -59,6 +59,8 @@ module.exports = {
         'uiDesign': "url('/ui-design.jpg')",
         'imageEdit': "url('/image-edit.jpg')",
         'illustration': "url('/illustration.jpg')",
+        'about': "url('/who-we-are.jpg')",
+        'contactBanner': "url('/contact-banner.png')",
       },
 
       backgroundSize: {
@@ -66,7 +68,9 @@ module.exports = {
         'contain': 'contain',
         'cover': 'cover',
         '120%': '120%',
-      }
+      },
+
+
 
     },
   },

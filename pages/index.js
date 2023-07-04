@@ -11,17 +11,17 @@ import WhatsApp from '@/components/utils/WhatsApp';
 
 const Home = () => {
     return (
-        <main className=' selection:bg-darkBlue selection:text-mainBG'>
+        <>
             <Navbar />
-            {/* <WhatsApp /> */}
-            {/* <ScrollToTop /> */}
             <Hero />
             <About />
             <ServiceSection />
             <Review />
             <EmailUs />
             <Footer />
-        </main>
+        </>
+        // <main className=' selection:bg-darkBlue selection:text-mainBG'>
+        // </main>
     )
 }
 
