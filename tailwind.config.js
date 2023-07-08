@@ -70,6 +70,7 @@ module.exports = {
         'contain': 'contain',
         'cover': 'cover',
         '90%': '90%',
+        '110%': '110%',
       },
 
       keyframes: {

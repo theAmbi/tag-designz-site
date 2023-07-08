@@ -8,6 +8,8 @@ This is a website for TAG Designz, a design agency that creates high-quality and
 
 - [Twitter](https://twitter.com/tag_designz).
 - [Instagram](https://instagram.com/tag_designz).
+- [Twitter](https://twitter.com/tag_designz).
+- [Facebook](https://facebook.com/tagdesignzz/).
 
 ## Tools used in this project
 
@@ -15,6 +17,7 @@ This is a website for TAG Designz, a design agency that creates high-quality and
 - TailwindCSS
 - React Transition Group
 - GSAP
+- Nodemailer
 - SwiperJS
 - React Icons
 
