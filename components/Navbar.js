@@ -7,25 +7,13 @@ import { Divide as Hamburger } from "hamburger-react"
 import { CSSTransition } from 'react-transition-group'
 import '../app/globals.css'
 
+
 const Navbar = () => {
     const [services, setServices] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [desktopServices, setDesktopServices] = useState(false);
     const mobileNavRef = useRef();
     const desktopServiceRef = useRef();
-
-
-    // useEffect(() => {
-
-    //     const outsideService = (e) => {
-    //         if (desktopServiceRef.current && !desktopServiceRef.current.contains(e.target)) {
-    //             setDesktopServices((prev) => !prev);
-    //         }
-    //     }
-
-    //     document.addEventListener('click', outsideService);
-    //     return () => { document.removeEventListener('click', outsideService) }
-    // });
 
 
     useEffect(() => {
@@ -44,7 +32,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="font-clashDisplay font-medium w-full lg:h-[10vh] bg-mainBG flex items-center z-[999] fixed top-0 left-0">
+            <nav className="font-clashDisplay font-medium w-full lg:h-[10vh] bg-mainBG flex items-center z-[999] fixed top-0 left-0" >
                 <div className=" container flex justify-between items-center">
                     <Link href={'/'} className="outline-none">
                         <Image src={logo} alt="tag-logo" />
@@ -53,7 +41,10 @@ const Navbar = () => {
                         <div className=" flex gap-x-10 text-textGray relative">
                             <Link href={'/about'}>Who We Are</Link>
                             <Link href={''} className=" flex flex-col gap-x-3 " ref={desktopServiceRef}>
-                                <div className="inline-flex gap-4" onClick={() => setDesktopServices(!desktopServices)}>
+                                <div className="inline-flex gap-4" onClick={(e) => {
+                                    e.preventDefault();
+                                    setDesktopServices(!desktopServices);
+                                }}>
                                     What We Offer
                                     <Image src={dropArrow} alt="dropdown-arrow" width={24} height={24} className={`w-auto ${desktopServices ? 'rotate-180' : 'rotate-0'} transition duration-300 ease-linear `} />
                                 </div>

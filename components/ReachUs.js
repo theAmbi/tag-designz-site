@@ -90,7 +90,6 @@ const EmailUs = () => {
                         type="submit"
                         className={`disabled:opacity-50 ${values.firstName && !values.email && !values.message ? 'enabled:opacity-100' : 'disabled:opacity-50'} mt-10 mb-8 bg-heroBG text-mainBG px-14 rounded-lg py-4 font-clashDisplay font-medium text-xl transition duration-500 ease-in-out cursor-pointer hover:scale-95 lg:text-2xl lg:py-6 focus:outline-none active:brightness-105 hover:brightness-105 focus:ring focus:ring-orange-500`}
                         onClick={handleSubmit}
-                        setEmailSent={true}
                         // isLoading={isLoading ? <AiOutlineLoading className="animate-spin" /> : ''}
                         disabled={!values.firstName || !values.email || !values.message}
                     >Send Email

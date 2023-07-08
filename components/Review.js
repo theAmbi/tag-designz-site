@@ -7,14 +7,24 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import { useEffect, useRef } from "react";
+
 
 const Review = () => {
+    const reviewSectionRef = useRef(null);
+    const reviewSectionContainer = useRef(null);
+
+
     return (
-        <section className="w-full min-h-screen bg-heroBG pb-14 ">
-            <div className="container pt-20">
+        <section className="w-full min-h-screen bg-heroBG pb-14" ref={reviewSectionRef}>
+            <div className="container pt-20" ref={reviewSectionContainer}>
                 <SHeadings subheading={'reviews'} heading={"What our clients have to say"} subColor={'mainBG'} headingColor={'mainBG'} />
                 <div className="pt-10 lg:pt-28">
-                    <Swiper modules={[Pagination, Autoplay, Navigation]} navigation={true} pagination={{ clickable: true }} autoplay={true} loop={true}>
+                    <Swiper modules={[Pagination, Autoplay, Navigation]} navigation={true} pagination={{ clickable: true }} autoplay={true} loop={true} style={{
+                        "--swiper-pagination-color": "#FFBA08",
+                        "--swiper-pagination-bullet-inactive-color": "#f9f9f9",
+                        "--swiper-pagination-bullet-inactive-opacity": "1",
+                    }}>
                         {reviewers.map(({ id, review, name, img }) => {
                             return <SwiperSlide key={id} className="py-5" >
                                 <article className="font-clashDisplay bg-mainBG my-6 py-20 px-10 flex flex-col justify-center items-center rounded-3xl w-[100%] lg:w-[85%] h-[470px] max-w-5xl mx-auto relative">

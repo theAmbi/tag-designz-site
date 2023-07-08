@@ -6,19 +6,31 @@ import ServiceSection from '@/components/ServiceSection';
 import Review from '@/components/Review';
 import EmailUs from '@/components/ReachUs';
 import Footer from '@/components/Footer';
-import { ScrollToTop } from '@/components/utils/ScrollToTop';
-import WhatsApp from '@/components/utils/WhatsApp';
+import Preloader from '@/components/Preloader';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+    }, [])
+
     return (
         <>
-            <Navbar />
-            <Hero />
-            <About />
-            <ServiceSection />
-            <Review />
-            <EmailUs />
-            <Footer />
+            {isLoading ? <Preloader /> : <div>
+                <Navbar />
+                <Hero />
+                <About />
+                <ServiceSection />
+                <Review />
+                <EmailUs />
+                <Footer />
+            </div>}
+
+
         </>
         // <main className=' selection:bg-darkBlue selection:text-mainBG'>
         // </main>

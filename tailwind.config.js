@@ -51,6 +51,7 @@ module.exports = {
 
       backgroundImage: {
         'office': "url('/office.jpg')",
+        'office2': "url('/office-2.jpg')",
         'design': "url('/design.jpg')",
         'development': "url('/development.jpg')",
         'pattern': "url('/pattern.png')",
@@ -61,16 +62,26 @@ module.exports = {
         'illustration': "url('/illustration.jpg')",
         'about': "url('/who-we-are.jpg')",
         'contactBanner': "url('/contact-banner.png')",
+        'identity': "url('/identity.jpg')",
       },
 
       backgroundSize: {
         'auto': 'auto',
         'contain': 'contain',
         'cover': 'cover',
-        '120%': '120%',
+        '90%': '90%',
       },
 
+      keyframes: {
+        spinner: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
 
+      animation: {
+        spinner: "spinner 1s ease-in-out infinite",
+      }
 
     },
   },
