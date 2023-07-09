@@ -8,6 +8,8 @@ import EmailUs from '@/components/ReachUs';
 import Footer from '@/components/Footer';
 import Preloader from '@/components/Preloader';
 import { useEffect, useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+
 
 const Home = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +22,8 @@ const Home = () => {
 
     return (
         <>
+
+
             {isLoading ? <Preloader /> : <div>
                 <Navbar />
                 <Hero />
@@ -28,6 +32,7 @@ const Home = () => {
                 <Review />
                 <EmailUs />
                 <Footer />
+                <Analytics />
             </div>}
 
 
