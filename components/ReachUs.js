@@ -27,7 +27,15 @@ const EmailUs = () => {
         }));
 
         await sendContactForm(values);
-        setState(() => values.email = '', values.firstName = '', values.message = '')
+        setState(prevState => ({
+            ...prevState,
+            values: {
+                ...prevState.values,
+                email: '',
+                firstName: '',
+                message: ''
+            }
+        }))
     };
 
 

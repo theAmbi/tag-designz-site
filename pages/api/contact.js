@@ -50,7 +50,8 @@ const handler = async (req, res) => {
                         <p>Message sent from ${data.firstName} by ${data.email}</p>
                         `
             });
-            return res.status(200).json({ message: 'Email sent successfully!' });
+            // return res.status(200).json({ message: 'Email sent successfully!' });
+            return true;
         } catch (error) {
             console.log(error);
             return res.status(400).json({ message: error.message });
