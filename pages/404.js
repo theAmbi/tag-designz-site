@@ -16,8 +16,8 @@ const Custom404 = () => {
             <div className="text-center font-clashDisplay" style={{ fontFamily: 'Clash Display', textAlign: 'center', marginTop: '60px' }}>
                 {/* <Image alt='error-image' src={ErrorImage} width={400} height={400} style={{ marginBottom: '40px' }} fetchPriority='high' /> */}
                 <Image alt='error-image' src={errorBotGIF} width={400} height={400} style={{ marginBottom: '40px' }} fetchPriority='high' />
-                <h1 className="text-6xl font-bold mb-2" style={{ fontSize: '4rem', color: '#151421', marginBottom: '30px' }}>Oops!</h1>
-                <p className="text-2xl text-gray-600 mb-8" style={{ color: '#606671', fontSize: '1.5rem' }}>Something went wrong. <br />Please try again.</p>
+                <h1 style={{ fontSize: '3rem', color: '#151421', marginBottom: '30px' }}>Oops!</h1>
+                <p style={{ color: '#606671', fontSize: '1.1rem' }}>Something went wrong. <br />Please try again.</p>
                 <Link href={'/'}>
                     <button style={
                         {
@@ -26,7 +26,7 @@ const Custom404 = () => {
                             background: '#F06435',
                             fontFamily: 'Clash Display',
                             fontWeight: '500',
-                            fontSize: '1.4rem',
+                            fontSize: '1.1rem',
                             borderRadius: '8px',
                             outline: 'none',
                             border: 'none',
