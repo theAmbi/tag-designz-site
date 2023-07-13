@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-// import logowhite from '../public/logowhite.svg'
 import hStacked from '@/public/h-stacked-dark_fit.png'
 
 const Footer = () => {
@@ -39,7 +38,6 @@ const Footer = () => {
                 </div>
             </div>
             <p className="bg-footerRights text-mainBG font-clashDisplay text-lg lg:text-xl py-7 text-center  w-full mt-20 lg:mt-32">2023, TAG Designz. All rights reserved</p>
-            <div className="w-full h-full  top-0 left-0 bg-pattern "></div>
 
         </section>
     )

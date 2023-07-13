@@ -11,12 +11,12 @@ const handler = async (req, res) => {
                 ...mailOptions,
                 subject: "New Message for TAG Designz",
                 text: "this is a test string",
-                html: `<h1>New Email from TAG Designz website</h1>
+                html: `<h1>New email from TAG Designz website</h1>
                         <p>${data.message}</p>
                         <p>Message sent from ${data.firstName} by ${data.email}</p>
                         `
             });
-            return true;
+            return res.status(200).json({ message: 'Email sent successfully!' });
         } catch (error) {
             console.log(error);
             return res.status(400).json({ message: error.message });

@@ -73,17 +73,6 @@ module.exports = {
         '110%': '110%',
       },
 
-      keyframes: {
-        spinner: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
-      },
-
-      animation: {
-        spinner: "spinner 1s ease-in-out infinite",
-      }
-
     },
   },
   plugins: [],

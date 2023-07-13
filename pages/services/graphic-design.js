@@ -52,7 +52,7 @@ const GraphicDesign = () => {
             <Navbar />
             <div className='w-full h-[200px] bg-gray-100 bg-design bg-cover md:bg-center flex justify-center items-center lg:bg-center lg:h-[300px] mt-14 mb-20 lg:mb-32'>
                 <div className='w-full h-full bg-black/50 flex justify-center items-center'>
-                    <h3 className=' font-clashDisplay font-semibold text-mainBG text-3xl lg:text-5xl '>Graphic Design</h3>
+                    <h1 className=' font-clashDisplay font-semibold text-mainBG text-3xl lg:text-5xl '>Graphic Design</h1>
                 </div>
             </div>
             <section className=' font-clashDisplay text-textGray'>

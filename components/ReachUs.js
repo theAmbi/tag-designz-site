@@ -3,7 +3,7 @@ import { SHeadings } from "./utils/SectionHeadings";
 import { AiOutlineLoading } from 'react-icons/ai'
 import { sendContactForm } from "@/lib/api";
 import SuccessEmail from "./SuccessEmailMessage";
-import handler from '@/pages/contact'
+
 
 const EmailUs = () => {
     const [emailSent, setEmailSent] = useState(false);

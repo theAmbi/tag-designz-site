@@ -45,7 +45,7 @@ const BrandIdentity = () => {
             <Navbar />
             <div className='w-full h-[200px] bg-gray-100 bg-identity bg-cover md:bg-center flex justify-center items-center lg:bg-center lg:h-[300px] mt-14 mb-20 lg:mb-32'>
                 <div className='w-full h-full bg-black/50 flex justify-center items-center'>
-                    <h3 className=' font-clashDisplay font-semibold text-mainBG text-3xl lg:text-5xl '>Brand Identity</h3>
+                    <h1 className=' font-clashDisplay font-semibold text-mainBG text-3xl lg:text-5xl '>Brand Identity</h1>
                 </div>
             </div>
             <div className="container mt-20 lg:mt-28 font-clashDisplay ">
